@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/enchiridion/home/home",
+    "pages/about/home/home",
+    "pages/enchiridion/wujin/home/home",
+    "pages/about/feedback/feedback",
+    "pages/enchiridion/policy/home/home",
+    "pages/enchiridion/benefit/home/home",
+    "pages/enchiridion/catalog/home/home",
+    "pages/enchiridion/detail/home/home",
+    "pages/about/timeline/timeline",
+    "pages/about/introduction/introduction",
+    "pages/enchiridion/search/search",
+    "pages/service/home/home",
+    "pages/enchiridion/markdown/home/home"
+  ],
+  "window": {
+
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "海贝分手册",
+    "navigationBarTextStyle": "black" 
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#346fc2",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/手册-蓝.png",
+        "iconPath": "images/手册-灰.png",
+        "pagePath": "pages/enchiridion/home/home",
+        "text": "手册"
+      },
+
+      {
+        "selectedIconPath": "images/关于-蓝.png",
+        "iconPath": "images/关于-灰.png",
+        "pagePath": "pages/about/home/home",
+        "text": "更多"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    },
+    "chatbot": {
+      "version": "1.2.11",
+      "provider": "wx8c631f7e9f2465e1"
+    }
+  },
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
