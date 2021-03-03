@@ -1,0 +1,5 @@
+<view class="container">
+  <image class='image1'  mode="widthFix" src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhsS7KypfQaDUIABFuYdfnHltioLcEhKoVVcsy*6CZDKkMzSiTmV4qKyyH9vSM5f1u4!/mnull&bo=wgGHAcIBhwEBCS4!&rf=photolist&t=5'></image>
+  <view class="box1">感谢您的使用 !</view>
+  <button open-type='feedback' type='primary' class="button1">点击进行反馈</button>
+</view>

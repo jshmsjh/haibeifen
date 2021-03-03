@@ -1,0 +1,5 @@
+/* pages/enchiridion/markdown/home/home.wxss */
+
+page {
+    background-color: white;
+}

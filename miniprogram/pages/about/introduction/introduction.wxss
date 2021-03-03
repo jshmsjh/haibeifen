@@ -1,0 +1,34 @@
+page {
+  background-color: white;
+}
+
+.divline {
+  background: #cce6ff;
+  height: 1rpx;
+  width: 100%;
+  position: absolute;
+}
+
+.box1 {
+  height: 100%;
+  padding: 32rpx;
+}
+
+.text-name {
+  font-family: "宋体";
+  font-size: 44rpx;
+  font-weight: bold;
+}
+
+.text-source {
+  padding-top: 32rpx;
+  font-size: 24rpx;
+  color: #8a8a8a;
+  padding: 32rpx 0 32rpx 0;
+}
+
+.text-desc {
+  padding-top: 32rpx;
+  font-size: 32rpx;
+  line-height: 32px;
+}

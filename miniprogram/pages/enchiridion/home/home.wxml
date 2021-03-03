@@ -1,0 +1,81 @@
+<!-- 搜索框 -->
+<view class='page_row' bindtap="suo">
+  <view class="search">
+    <view class="df search_arr">
+      <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhsRotWXwBQG*TBjUgW*dzD5XV1fSHCGexnQBMYZzJ*BmOdGbYhXNGHh09j*YYC3JCA!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="searchcion"></image>
+      <input class="sousuo" disabled placeholder="搜索" bindtap='search' />
+    </view>
+  </view>
+</view>
+
+<view class="containerBox">
+  <view class="swiperMain" >
+    <swiper bindchange="swiperChange" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorActiveColor}}">
+      <view wx:for="{{tpList}}" wx:for-item="tpTeam" id="{{tpTeam.id}}" class="imgClass" bindtap="navi2lunbo"  data-index='{{index}}'>
+        <swiper-item>
+          <image class="swiperImg" mode="aspectFit" src="{{tpTeam.img_url}}" mode="scaleToFill"></image>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+</view>
+<view class="divline_box1">
+  <view class="divline1"></view>
+</view>
+
+<!-- 分类 -->
+<view class="box1">
+  <view class="block"></view>
+  <text class="text1">分类</text>
+</view>
+<view class="box2">
+  <view class="box3" bindtap="navi2policy">
+    <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5sLZpsHune*tb*6cwwethb5iTdsbIuJ5i8AEtYQmYxKrc78a2jko7biAEjVMd95..yrHlMnqMkpM3WOPyZeiPmM!/mnull&bo=2wDIANsAyAADCSw!&rf=photolist&t=5" class="image2"></image>
+    <view>
+      <text class="text2">政策法规</text>
+    </view>
+  </view>
+
+  <view class="box3" bindtap="navi2benefit">
+    <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhsY62NXkIxibdeM1x.5IpkFdeTkbveKZmKo7hfjHRSkZM*yx91IkhvYjSAswQZoJaY!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="image1"></image>
+    <view>
+      <text class="text2">信用惠民</text>
+    </view>
+  </view>
+
+  <view class="box3" bindtap="navi2wujin">
+    <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhviF23dt6b6G.louu.4JD1CNBY1MoABvh9UqN9XQ5RIPWc.x33ylvxoGfaPmeKvvac!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="image2"></image>
+    <view>
+      <text class="text2">五进政策</text>
+    </view>
+  </view>
+
+  <view class="box3" bindtap="navi2liangbanfa">
+    <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5mR0nSTojhXm7GHyI0L.6nWYWqIluS2B8eBsgKBJIGpXuFgxPkD47Aa0k8RKsTFv6*aL*r2hEXoRPIAeqaU1gjI!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="image1"></image>
+    <view>
+      <text class="text2">两办法</text>
+    </view>
+  </view>
+</view>
+<view class="divline_box1">
+  <view class="divline1"></view>
+</view>
+
+<!-- 政策必读 -->
+<view class="box4">
+  <view class="block"></view>
+  <text class="text1">政策必读</text>
+</view>
+
+<view class="box5" wx:for="{{textList}}" data-index='{{index}}' bindtap="navi2detail">
+    <view>
+      <text class="text2">{{item.title}}</text>
+    </view>
+    <view style="padding-top:12rpx">
+      <text class="text3">{{item.from}}</text>
+    </view>
+    <view class="divline_box1">
+      <view class="divline2"></view>
+    </view>
+
+</view>

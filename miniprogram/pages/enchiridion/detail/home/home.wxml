@@ -1,0 +1,40 @@
+<view class="load" wx:if="{{isLoading}}">
+  <image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:260rpx"></image>
+</view>
+<view wx:else="{{!isLoading}}">
+  <view class='box1'>
+    <block wx:for="{{textList}}">
+      <view class='text-item'>
+        <!-- 标题一 （所有excel共有） -->
+        <text class='text-title1'>
+        {{item.title1}}
+      </text>
+        <!-- 标题二 （所有excel共有）-->
+        <view class='text-title2'>
+          {{item.title2}}
+        </view>
+        <view class="divline1"></view>
+        <!-- 内容 （所有excel共有）-->
+        <text class='text-content'>
+        {{item.content}}
+      </text>
+        <!-- 其他内容1 （仅部分excel中）-->
+        <text class='text-other1'>
+        {{item.other1}}
+      </text>
+        <!-- 其他内容2 （仅部分excel中）-->
+        <view class="right">
+          <text class='text-other2'>
+        {{item.other2}}
+      </text>
+        </view>
+        <!-- 其他内容3 （仅部分excel中）-->
+        <view class="right">
+          <text class='text-other3'>
+        {{item.other3}}
+      </text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

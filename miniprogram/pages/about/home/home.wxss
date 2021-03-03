@@ -1,0 +1,87 @@
+/* miniprogram/haibei pages/about and feedback/about and feedback.wxss */
+
+.UCenter-bg {
+  background-image: url(http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5sZ9ZiXuawZ76sA7kSmNbN86P0..BCHJaXphe5Z82BwOJ33UCS24MPVqVeRhaVcCmaJMsyP5PTnkKNMO2t3Sj6k!/mnull&bo=7gKFAwAAAAADB0g!&rf=photolist&t=5);
+  background-size: cover;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg image {
+  width:350rpx;
+}
+
+.UCenter-bg .gif-wave {
+  position: absolute;
+  width: 100%;
+  bottom: -1rpx;
+  z-index: 99;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}
+.title{
+  padding-top: 40rpx;
+  font-size:  30rpx;
+}
+
+.box1 {
+  height: 10rpx;
+  background-color: white;
+  box-shadow: 0rpx 1rpx 20rpx 2rpx rgba(1, 1, 1, 0.2);
+}
+
+.box2 {
+  height: 40rpx;
+}
+
+.box3 {
+  height: 112rpx;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  border-radius: 20rpx 20rpx 0 0;
+}
+
+.box4 {
+  height: 112rpx;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+
+.box5 {
+  height: 112rpx;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 20rpx 20rpx;
+}
+
+.image1 {
+  height: 34rpx;
+  width: 34rpx;
+  margin-right: 32rpx;
+}
+
+.text1 {
+  font-size: 30rpx;
+  color: black;
+  padding-left: 32rpx;
+  flex: 1;
+}
+
+.divLine1 {
+  height: 2rpx;
+}

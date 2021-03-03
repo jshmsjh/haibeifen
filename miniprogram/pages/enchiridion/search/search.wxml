@@ -1,0 +1,57 @@
+<view class="load" wx:if="{{isLoading}}">
+   <image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
+</view>
+<view wx:else="{{!isLoading}}">
+<view overflow="scroll">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+    <!-- 搜索框 -->
+      <view class="weui-search-bar__box">
+        <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhsRotWXwBQG*TBjUgW*dzD5XV1fSHCGexnQBMYZzJ*BmOdGbYhXNGHh09j*YYC3JCA!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="weui-icon-search_in-box" style="position: absolute; left: 29rpx; top: 25rpx"></image>
+        <input type="text" class="weui-search-bar__input" placeholder="请输入搜索内容"  value="{{inputValue}}" bindinput="bindSearchInput" confirm-type="search" bindconfirm="confirminput"/>
+        <image src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5lxu3wyFqtVlvOpUV1Cq*ojr1kcaBdhRnZxgG20U6vwCX*TZUGuxzHlgqCJ4lajL8T2kbfHrbK2Rlx9MBKUzdw8!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' class="weui-icon-search_in-boxbehind" wx:if="{{inputValue}}" bindtap='clean' style="position: absolute; left: 632rpx; top: 21rpx"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 搜索历史 -->
+  <view class='flex space_between align_center search_title'>
+    <view>
+      搜索历史
+    </view>
+    <image class="remove" src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5nLHzT.vCSGf73WwHf4fE*ZSaZChI.FVLhfjfpbhIw2YKFKtGTJKr0qWts9Iw5GDRA2eZWLC7oHZHp7ojyXFswA!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' wx:if="{{list.length!=0}}"  catchtap='remove'></image>
+  </view>
+
+  <!--  搜索记录  -->
+  <view class='list' wx:if="{{xianzhi == true}}">
+     <view class="key" wx:for="{{list}}" wx:key="key" data-id='{{index}}' bindtap="bindhistory" wx:if="{{ index < 8}}">{{list[list.length-index-1].lishi}}</view>
+     <!-- <view class="key" wx:if="{{list.length==0}}">暂无搜索记录</view> -->
+  </view>
+
+  <view class='list' wx:elif="{{xianzhi==false}}">
+     <view class="key" wx:for="{{list}}" wx:key="key" data-id='{{index}}' bindtap="bindhistory">{{list[list.length-index-1].lishi}}</view>
+  </view>
+
+  <image src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5vk95Co.5WwsKkO9dEdIruY*KoikPBVZ1q3kEtqn6SssK5S8wYFSSggYu2sIVLuS3*OmeKAGFu*u3nS*8YPZmsM!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' class="list_picture" bindtap="xianzhis" wx:if="{{list.length > 7 && xianzhi == true}}" style="position: absolute; left: 150rpx; top: 165rpx"></image>
+  <image src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5sw8Rte7WSSYsNDbp*JMbUlm8b3DDtvyAp3OBKXTLR1uFbjh4DcuZmTvPC8xotvHh68C*Xlqm18DpV9zG5MK.OY!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' class="list_picture" bindtap="xianzhis" wx:if="{{list.length > 7 && xianzhi == false}}"></image>
+
+
+  <!-- 搜索时内容 -->
+  <view  class='search_result' wx:if="{{inputValue}}" style="position: fixed; left: 0rpx; top: 129rpx">
+    <!-- <view class="divline_box2"><view class="divline1"></view></view> -->
+    <block wx:for="{{resultList}}" wx:for-index="idx" wx:for-item="key_item" wx:key="key">
+      <view data-idx="{{idx}}" class="list-item" bindtap="navi2detail" data-name="{{idx}}">
+          <text class="text1">{{showtitle[idx]}}\n</text>
+          <!-- <text>\n</text> -->
+        <block wx:for="{{key_item}}" wx:for-item="key_obj" wx:key="key">
+          
+          <text wx:if="{{key_obj.key == true}}" style="color:red;">{{key_obj.str}}</text>
+          <text wx:else>{{key_obj.str}}</text>
+        </block>
+      </view>
+      <!-- <view class="divline_box2"><view class="divline1"></view></view> -->
+    </block>
+    <view class='no_more' wx:if="{{resultList.length==0}}">暂无相关内容</view>
+  </view>
+</view>
+</view>

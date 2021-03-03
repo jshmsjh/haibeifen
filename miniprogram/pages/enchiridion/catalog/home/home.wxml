@@ -1,0 +1,83 @@
+<view class="load" wx:if="{{isLoading}}">
+  <image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:260rpx"></image>
+</view>
+<view wx:else="{{!isLoading}}">
+  <scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+    <view class="lock">
+      <view class="objectView">
+        <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5mR0nSTojhXm7GHyI0L.6nXT9SOmNXFTPvOI.fIf*wJVgqmyQEij6z37CTYmQ9t6f1bX5Rn1uNSk6fETJzu5USA!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="catlog" bindtap="showModal"
+          data-target="viewModal"></image>
+      </view>
+      <!-- 搜索框 -->
+      <view class='page_row' bindtap="suo">
+        <view class="search">
+          <view class="df search_arr">
+            <image src="http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5r8zxP0007wrUusaIndiAhsRotWXwBQG*TBjUgW*dzD5XV1fSHCGexnQBMYZzJ*BmOdGbYhXNGHh09j*YYC3JCA!/mnull&bo=yADIAMgAyAADCSw!&rf=photolist&t=5" class="searchcion"></image>
+            <input class="sousuo" disabled placeholder="搜索" bindtap='search' />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='box'>
+      <view wx:for="{{textList}}" class='text-item' bindtap="navi2detail" data-name='{{textList[index]._id}}' wx:key="key" wx:if="{{showtitle==false}}">
+        <view class='text-title1'>
+          {{item.title1}}
+        </view>
+        <view class='text-title2'>
+          {{item.title2}}
+        </view>
+        <view class='text-content'>
+          {{item.content}}
+        </view>
+      </view>
+      <view wx:for="{{muluList}}" class='text-item' bindtap="navi2detail" data-name='{{muluList[index]._id}}' wx:key="key" wx:if="{{showtitle==true}}">
+        <view class='text-title1'>
+          {{item.title1}}
+        </view>
+        <view class='text-title2'>
+          {{item.title2}}
+        </view>
+        <view class='text-content'>
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+
+
+  <view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+    <text class="cuIcon-pullright"></text>
+  </view>
+  <scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+    <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+
+      <!-- 侧边栏 -->
+      <view class="cehuaDa">
+        <view class="sideslipMenuItemlist">
+          <view bindtap="quanbu" class="all">全部</view>
+          <view class="list_box" wx:for="{{title1}}" wx:for-index='parentIndex' wx:for-item='parentItem'>
+            <view class="list">
+              <view class="list_name_box" bindtap="firstjump" data-indexs="{{parentIndex}}">
+                <text class='list_item_name'>{{parentItem}}</text>
+                <image src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5sw8Rte7WSSYsNDbp*JMbUlm8b3DDtvyAp3OBKXTLR1uFbjh4DcuZmTvPC8xotvHh68C*Xlqm18DpV9zG5MK.OY!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' class='icon_down' wx:if="{{show[parentIndex]==true}}"></image>
+                <image src='http://m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5vk95Co.5WwsKkO9dEdIruY*KoikPBVZ1q3kEtqn6SssK5S8wYFSSggYu2sIVLuS3*OmeKAGFu*u3nS*8YPZmsM!/mnull&bo=yADIAAAAAAADByI!&rf=photolist&t=5' class='icon_down' wx:if="{{show[parentIndex]==false}}"></image>
+              </view>
+              <!-- <view>{{parentIndex}}</view> -->
+              <view class="list_item_box" wx:if="{{show[parentIndex]}}" wx:for="{{title2}}" wx:for-index="sonIndex" wx:for-item='sonItem' bindtap="secondjump" data-index2="{{sonIndex}}" data-index1="{{parentIndex}}">
+                <view class="list_item">
+                  <view class="list_item_name_box">
+                    <text class='list_item_name'>{{sonItem}}</text>
+                  </view>
+                  <view class="divline_box3"><view class='divline2'></view></view>
+                </view>
+              </view>
+            </view>
+          </view>
+          
+        </view>
+        <view class="sideslipMenu" catchtap="offSideslipMen"></view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,64 @@
+<view class="cu-timeline">
+  <view class="cu-time">一年前</view>
+  <view class="cu-item cur cuIcon-noticefill">
+    <view class="content bg-blue shadow-blur">
+      <text>2020.01.01</text> 信用【进农村】：威海市文登区农村居民信用积分评价办法
+    </view>
+  </view>
+  <view class="cu-item text-red cuIcon-attentionforbidfill">
+    <view class="content bg-green shadow-blur">
+      <text>2020.02.26</text> 信用【进机关】：关于印发《威海市文登区”海贝分-机关信用分“积分管理试行办法》的通知
+    </view>
+  </view>
+</view>
+
+
+
+<view class="cu-timeline">
+  <view class="cu-time">半年前</view>
+  <view class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="content bg-cyan shadow-blur">
+      <text>2020.03.17</text> 信用【进社区】：关于印发《威海市文登区信用“进社区”积分管理试行办法》的通知
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-olive content">
+      <text space='nbsp'>2020.04.01
+信用【进校园】：威海市文登区信用“进校园”（中小学生）积分管理试行办法
+信用【进校园】：威海市文登区信用“进校园”（教职工）积分管理试行办法
+      </text>
+    </view>
+  </view>
+  <view class="cu-item text-grey cuIcon-evaluate_fill">
+    <view class="content bg-mauve shadow-blur">
+      <text>2020.06.01
+信用【进企业】：威海市文登区信用“进企业”（个体工商户）积分管理试行办法
+信用【进企业】：威海市文登区信用“进企业”（企业、商超）积分管理试行办法
+信用【进机关】：威海市文登区信用“进机关”（患者及家属）积分管理试行办法
+信用【进机关】：威海市文登区信用“进机关”（医护人员）积分管理试行办法
+      </text>
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">三个月前</view>
+  <view class="cu-item">
+    <view class="content">
+      <text>2020.09.08</text> 关于加快推进信用“五进”工程的通知
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">一个月前</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">新的一年</view>
+        <view class="cu-tag line-cyan">1.18</view>
+      </view>
+      <view class="margin-top">区委办公室 区政府办公室关于印发《威海市文登区社会成员信用积分和信用评价管理办法》《威海市文登区农村居民信用积分评价办法》的通知</view>
+    </view>
+  </view>
+</view>

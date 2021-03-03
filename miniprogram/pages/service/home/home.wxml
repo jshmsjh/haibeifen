@@ -1,0 +1,13 @@
+<!-- 自定义导航 -->
+<view class="container" wx:if="{{flag}}">
+    <view style="height: calc(100vh - 48px)">
+        <chat 
+        bind:queryCallback="getQueryCallback" 
+        generic:textMessage="customTextMessage" 
+        generic:imageMessage="customImageMessage" 
+        generic:guideCard="customGuideCard" 
+        generic:queryMessage="customQueryMessage" 
+        generic:operateCard="customoperateCard" 
+        ></chat>
+    </view>
+</view>

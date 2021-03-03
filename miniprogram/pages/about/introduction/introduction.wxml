@@ -1,0 +1,16 @@
+<view class='box1'>
+  <block wx:for="{{textList}}">
+    <view class='text-item'>
+      <view class='text-name'>
+        {{item.title}}
+      </view>
+      <view class='text-source'>
+        政策来源：{{item.source}}
+      </view>
+      <view class="divline1"></view>
+      <view class='text-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">
+        {{item.description}}
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,24 @@
+page{
+  background-color: white
+}
+.section_text {
+  position: fixed;
+  text-align: center;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+}
+
+.image1 {
+  margin-top: 100rpx;
+  width: 500rpx;
+}
+
+.button1{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}
+box1{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+}

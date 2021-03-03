@@ -1,0 +1,199 @@
+page{
+  background-color: white;
+}
+.weui-search-bar {
+  position: relative;
+  padding: 30rpx 30rpx 5rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  border-top: 1rpx solid #CCE6FF;
+  background-color: white;
+
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 20rpx;
+  top: 14rpx;
+  width: 28rpx;
+  height: 28rpx;
+  background-color: white;
+
+}
+.load {
+  margin-top:50%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+}
+.weui-icon-search_in-boxbehind {
+  position: absolute; /*要约束所在位置的子元素的位置要设置成绝对*/
+  right: -16rpx; /*调节靠右*/
+  top: 10rpx;
+  width: 36rpx;
+  height: 36rpx;
+  background-color: white;
+}
+
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 40rpx;
+  background: white;
+  border: 1rpx solid #0081ff;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 80rpx;
+  padding-right: 80rpx;
+  width: 95%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+.back{
+  margin-left: 20rpx;
+  line-height: 56rpx;
+  color: #0081ff;
+  white-space: nowrap;
+}
+
+.search-content-body {
+  margin: 50rpx;
+}
+
+.key{
+  width:auto;
+  height:48rpx;
+  line-height: 48rpx;
+  background:rgba(246,246,246,1);
+  border-radius:30rpx;
+  padding: 5rpx 30rpx;
+  font-weight:300;
+  color: #4A4A4A;
+  float:left;
+  margin-right: 10rpx;
+  margin-bottom: 30rpx;
+  margin-left: 10rpx;
+}
+
+.list{
+  padding-left: 10rpx;
+  margin-right: 50rpx;
+}
+.list_picture{
+  margin-right: 30rpx;
+  position: absolute; /*要约束所在位置的子元素的位置要设置成绝对*/
+  left: 150rpx; 
+  top: 165rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+
+.search_title{
+   margin: 40rpx 20rpx 40rpx 30rpx;
+}
+.search_title image{
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.search_result{
+  position:fixed;
+  left:0;
+  right:0;
+  top:95rpx;
+  bottom:0;
+  background:#ffffff;
+  font-size: 26rpx;
+  overflow: scroll;
+  /* padding-bottom: 30rpx; */
+}
+
+.search_result>view{
+  width: 690rpx;
+  border-top: 1rpx solid  #CCE6FF;
+  padding-top:30rpx;
+  border-bottom:30rpx solid  white;
+  padding-bottom: 1rpx;
+  margin: auto;
+  /* padding:30rpx 0;   solid  #CCE6FF*/
+  font-weight:400;
+  color: rgb(0, 0, 0);
+  font-size: 26rpx;
+  /* text-indent: 2em; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+.text1{
+  font-size: 30rpx;
+}
+
+.search_result>view:nth-last-child(1){
+   border-bottom: none;
+}
+
+.search_input {
+  width: 620rpx;
+  height: 72rpx;
+  background: rgba(247, 247, 247, 1);
+  border-radius: 36rpx;
+  padding-left: 80rpx;
+  margin: auto;
+  font-size: 24rpx;
+}
+
+.search_input input{
+  line-height:72rpx;
+  height:72rpx;
+  width:500rpx;
+}
+
+
+
+.search_placeholder {
+  color: #cacaca;
+}
+
+.no_more {
+  text-align: center;
+  font-weight: 400;
+  color: rgba(107, 107, 107, 1);
+  margin-bottom: 30rpx;
+}
+
+
+.search_title{
+   margin: 40rpx 20rpx 40rpx 30rpx;
+}
+.search_title image{
+    width: 48rpx;
+    height: 48rpx;
+}
+.flex {
+  display: flex;
+}
+.space_between {
+  justify-content: space-between;
+}
+.space_around {
+  justify-content: space-around;
+}
+.align_center {
+  align-items: center;
+}

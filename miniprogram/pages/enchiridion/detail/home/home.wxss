@@ -1,0 +1,58 @@
+page {
+  background-color: white;
+}
+
+
+
+.divline {
+  background: #cce6ff;
+  height: 1rpx;
+  width: 100%;
+  position: absolute;
+}
+
+.box1 {
+  height: 100%;
+  padding: 0 32rpx;
+}
+
+.text-item {
+  flex-flow: row;
+}
+
+.text-title1 {
+  font-size: 44rpx;
+  font-weight: bold;
+}
+
+.text-title2 {
+  font-size: 28rpx;
+  color: #8a8a8a;
+  padding: 32rpx 0 32rpx 0;
+}
+
+.text-content {
+  font-size: 32rpx;
+  line-height: 32px;
+}
+
+.text-other1 {
+  font-size: 32rpx;
+  line-height: 32px;
+}
+
+.text-other2 {
+  font-size: 34rpx;
+  line-height: 32px;
+}
+
+.text-other3 {
+  font-size: 34rpx;
+  line-height: 32px;
+  color: #8a8a8a;
+}
+
+.right {
+  text-align: right;
+  padding-right: 32rpx;
+}

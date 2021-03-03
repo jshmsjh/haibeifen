@@ -1,0 +1,58 @@
+<view class="load" wx:if="{{isLoading}}">
+	<image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response"
+		style="height:260rpx"></image>
+</view>
+<view wx:else="{{!isLoading}}">
+	
+
+
+	<!-- 政策必读 -->
+	<view class="box4">
+		<view class="block"></view>
+		<text class="text1">政策必读</text>
+	</view>
+
+	<view class="box5" wx:for="{{textList1}}" data-index='{{index}}' bindtap="navi1detail">
+		<view>
+			<text class="text2">{{item.title}}</text>
+		</view>
+		<view style="padding-top:12rpx">
+			<text class="text3">{{item.from}}</text>
+		</view>
+		<view class="divline_box1">
+			<view class="divline2"></view>
+		</view>
+
+	</view>
+
+
+
+
+
+	<!-- 大家关注 -->
+	<view class="box4">
+		<view class="block"></view>
+		<text class="text1">大家关注</text>
+	</view>
+
+
+
+
+
+	<view class="box5" wx:for="{{textList2}}" data-index='{{index}}' bindtap="navi2detail">
+		<view>
+			<text class="text2">{{item.title}}</text>
+		</view>
+		<view style="padding-top:12rpx">
+			<text class="text3">{{item.from}}</text>
+		</view>
+		<view class="divline_box1">
+			<view class="divline2"></view>
+		</view>
+
+
+
+
+
+	</view>
+</view>

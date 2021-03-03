@@ -1,0 +1,7 @@
+<!--loading-->
+<view class="load" wx:if="{{isLoading}}">
+  <image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:260rpx"></image>
+</view>
+
+<!--使用towxml-->
+<towxml nodes="{{article}}"/>
