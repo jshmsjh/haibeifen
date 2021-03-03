@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="answer" >
+    <image class="answerimage" src="{{AvatarImage}}"></image>
+    <view class="leftView">
+      <view wx:if="{{isRich}}">
+        <rich-text  nodes="{{answer}}"></rich-text>
+        <view wx:if="{{linkArr.length}}" >
+          <view data-weburl="{{item.href}}" class="link" wx:for="{{linkArr}}" wx:item="item" wx:key="key" bindtap="tap">
+            {{item.name}}
+          </view>
+        </view>
+      </view>
+      <text wx:else bindlongpress="showModal">{{msg.content}}</text>
+      <!-- <text bindlongpress="showModal">{{msg.content}}</text> -->
+    </view>
+  </view>
+</view>
+<mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" actions="{{groups}}" title="请问您要执行哪项操作？">
+</mp-actionSheet>

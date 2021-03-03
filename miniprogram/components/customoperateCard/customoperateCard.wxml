@@ -1,0 +1,21 @@
+<view class='bottom-operate-view' wx:if="{{!inputing}}" style="height: {{height}}px">
+  <!-- 切换语音和文字输入 -->
+  <view class='list-btn' catchtap='chooseType' data-type='input'>
+    <image class='list-img' src='https://7465-testsduwh030201-icc8o-1301103668.tcb.qcloud.la/%E6%B5%B7%E8%B4%9D%E5%88%86/keyboard.png?sign=66aba1cb18c3ce002a4568c123f268a9&t=1613959528'></image>
+  </view>
+  <view class="input-voice-class" bindtouchstart='inputVoiceStart' bindtouchcancel="inputVoiceEnd" bindtouchend='inputVoiceEnd'>
+    <text class="text-view"style="color: #c4c5c7" >按住开始说话...</text>
+  </view>
+</view>
+
+<view class='bottom-operate-view' wx:if="{{inputing}}" style="height: {{height}}px">
+  <view class='list-btn-inputView' catchtap='chooseType' data-type='voice'>
+    <image class='list-img2' src='https://7465-testsduwh030201-icc8o-1301103668.tcb.qcloud.la/%E6%B5%B7%E8%B4%9D%E5%88%86/Microphone.png?sign=bf5b6d212741be74188eb57bb8ac7fb6&t=1613900410'></image>
+  </view>
+  <view class='input-btn-inputView'>
+    <input class='input-view' focus="{{focus}}" placeholder="请输入" value='{{inputText}}' bindblur="changContentInput" bindblur="tuneDownInput" type='text' confirm-type='send' bindconfirm="bindconfirmInput" bindinput="bindInput" placeholder-style="color: #c4c5c7" cursor-spacing='10'></input>
+  </view>
+  <!-- <view class='voice-btn-inputView' catchtap='showGuideView'>
+    <image class='voice-img2' src="https://res.wx.qq.com/mmspraiweb_node/dist/static/openaiplugin/img/home.png"></image>
+  </view> -->
+</view>
