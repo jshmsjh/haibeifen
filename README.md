@@ -25,10 +25,12 @@
 
 ## 截图
 如果加载失败，请看本目录下`image.png`
+
 <img src="/image.png" style="zoom: 50%;" />
 
 ## 小程序码
 如果加载失败，请看本目录下`QR_code.jpg`
+
 <img src="QR_code.jpg" style="zoom: 50%;" />
 
 ## 参考
