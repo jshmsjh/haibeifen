@@ -25,11 +25,11 @@
 
 ## 截图
 
-![image](image.png)
+![image](/image.png)
 
 ## 小程序码
 
-![](QR_code.jpg)
+![](/QR_code.jpg)
 
 ## 参考
 
