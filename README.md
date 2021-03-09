@@ -25,7 +25,7 @@
 
 ## 截图
 
-![image](/image.png)
+![image](https://github.com/jshmsjh/haibeifen/blob/main/image.png)
 
 ## 小程序码
 
