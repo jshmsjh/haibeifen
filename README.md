@@ -19,7 +19,7 @@
 
 1. 请下载本仓库至本地文件夹并用最新版[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)打开，注意在导入时需要使用微信小程序正式版`APPID`
 2. 点击微信开发者工具调试器Console界面的“授权使用”链接，授权使用`openaiwidget`对话插件
-3. 由于小程序使用的数据存储在我们的云开发环境中，数据库的内容并不能在微信开发者工具中加载（但可以在小程序线上版本中使用）。如需使用数据库完整的功能，请将小程序`app.js`以及其他页面的云开发环境替换成自己的云开发环境。
+3. 由于小程序使用的数据存储在我们的云开发环境中，数据库的内容并不能在微信开发者工具中加载（但可以在小程序线上版本中使用）。如需使用数据库完整的功能，请将小程序`app.js`以及其他页面的云开发环境替换成您自己的云开发环境。
 
 具体内容可以参考我们的[知乎文章](https://zhuanlan.zhihu.com/p/354414192)和[B站视频](https://www.bilibili.com/video/BV1GU4y1p77E?from=search&seid=3690619691390577090)。知乎文章里有对本项目代码较详细的介绍。
 
@@ -35,7 +35,7 @@
 
 ## 参考
 
-- **UI：**“海贝分手册”小程序使用了色彩丰富的[ColorUI组件库](https://github.com/weilanwl/ColorUI)中的全屏抽屉、导航栏等`wxml`样式以及部分动效图片，以及微信官方组件库[WeUI](https://github.com/Tencent/weui)中的`Actionsheet`组件。机器客服页面UI基于[微信小程序对话插件](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1#6-6-texttospeech)提供的接入样例作了一部分修改。
-- **语音识别功能**由[微信同声传译](https://developers.weixin.qq.com/miniprogram/dev/extended/service/translator.html)提供。
+- “海贝分手册”小程序使用了色彩丰富的[ColorUI组件库](https://github.com/weilanwl/ColorUI)中的全屏抽屉、导航栏等`wxml`样式以及部分动效图片，以及微信官方组件库[WeUI](https://github.com/Tencent/weui)中的`Actionsheet`组件。机器客服页面UI基于[微信小程序对话插件](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx8c631f7e9f2465e1#6-6-texttospeech)提供的接入样例作了一部分修改。
+- 语音识别功能由[微信同声传译](https://developers.weixin.qq.com/miniprogram/dev/extended/service/translator.html)提供。
 - 对话部分使用了[微信对话开放平台](https://openai.weixin.qq.com/)，基于从[信用中国（威海文登）](http://wdcredit.gov.cn/)整理的数据配置客服机器人，实现了普通问答与多轮问答功能。
 - markdown渲染使用了[towxml](https://github.com/sbfkcel/towxml)插件
