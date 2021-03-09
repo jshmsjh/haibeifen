@@ -24,9 +24,11 @@
 具体内容可以参考我们的[知乎文章](https://zhuanlan.zhihu.com/p/354414192)和[B站视频](https://www.bilibili.com/video/BV1GU4y1p77E?from=search&seid=3690619691390577090)
 
 ## 截图
+如果加载失败，请看本目录下`image.png`
 <img src="/image.png" style="zoom: 50%;" />
 
 ## 小程序码
+如果加载失败，请看本目录下`QR_code.jpg`
 <img src="QR_code.jpg" style="zoom: 50%;" />
 
 ## 参考
