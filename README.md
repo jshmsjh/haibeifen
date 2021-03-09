@@ -24,12 +24,10 @@
 具体内容可以参考我们的[知乎文章](https://zhuanlan.zhihu.com/p/354414192)和[B站视频](https://www.bilibili.com/video/BV1GU4y1p77E?from=search&seid=3690619691390577090)
 
 ## 截图
-<img src="http://
-m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5iw6WHNWahvnwZ7oeDQKB3t7t*Uay0lmqbwOsgYrekQY8BnymBualQgyNe6eot8VB5f3OuFTp7dBBM81d7FMU3o!/mnull&bo=xwPoAccD6AEDCSw!&rf=photolist&t=5" style="zoom: 50%;" />
+<img src="/image.png" style="zoom: 50%;" />
 
 ## 小程序码
-<img src="http://
-m.qpic.cn/psc?/V53eNTYt1pd9JR0Gs26D2BgrN92nV3Uu/ruAMsa53pVQWN7FLK88i5iw6WHNWahvnwZ7oeDQKB3thQZJSiK6a87P3WCuIMpQIowbjlYNjWLa3GpmoV1DyMY17Hdob2yBdRV9xKD572xg!/mnull&bo=AgECAQIBAgEBCS4!&rf=photolist&t=5" style="zoom: 50%;" />
+<img src="QR_code.png" style="zoom: 50%;" />
 
 ## 参考
 
