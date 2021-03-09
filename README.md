@@ -27,7 +27,7 @@
 <img src="/image.png" style="zoom: 50%;" />
 
 ## 小程序码
-<img src="QR_code.png" style="zoom: 50%;" />
+<img src="QR_code.jpg" style="zoom: 50%;" />
 
 ## 参考
 
