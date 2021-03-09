@@ -21,7 +21,7 @@
 2. 点击微信开发者工具调试器Console界面的“授权使用”链接，授权使用`openaiwidget`对话插件
 3. 由于小程序使用的数据存储在我们的云开发环境中，数据库的内容并不能在微信开发者工具中加载（但可以在小程序线上版本中使用）。如需使用数据库完整的功能，请将小程序`app.js`以及其他页面的云开发环境替换成自己的云开发环境。
 
-具体内容可以参考我们的[知乎文章](https://zhuanlan.zhihu.com/p/354414192)和[B站视频](https://www.bilibili.com/video/BV1GU4y1p77E?from=search&seid=3690619691390577090)
+具体内容可以参考我们的[知乎文章](https://zhuanlan.zhihu.com/p/354414192)和[B站视频](https://www.bilibili.com/video/BV1GU4y1p77E?from=search&seid=3690619691390577090)。知乎文章里有对本项目代码较详细的介绍。
 
 ## 截图
 如果加载失败，请看本目录下`image.png`
